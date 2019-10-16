@@ -1,4 +1,4 @@
-package models;
+package com.test.models;
 
 public enum LogEntryState {
 

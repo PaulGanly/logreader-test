@@ -1,6 +1,6 @@
-package util;
+package com.test.util;
 
-import models.db.EventDetail;
+import com.test.models.db.EventDetail;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;

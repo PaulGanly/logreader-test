@@ -1,0 +1,33 @@
+# Operating System Files
+
+*.DS_Store
+Thumbs.db
+
+# Build Files #
+
+bin
+target
+build/
+.gradle
+gradlew
+gradlew.bat
+.gradle/
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Eclipse Project Files #
+
+.classpath
+.project
+.settings
+
+# IntelliJ IDEA Files #
+
+*.iml
+*.ipr
+*.iws
+*.idea
+
+# Other
+
+.hsqldb/

@@ -1,12 +1,12 @@
-package services;
+package com.test.services;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import models.LogEntry;
-import models.db.EventDetail;
+import com.test.models.LogEntry;
+import com.test.models.db.EventDetail;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import util.HibernateUtil;
+import com.test.util.HibernateUtil;
 
 import java.io.BufferedReader;
 import java.nio.charset.StandardCharsets;

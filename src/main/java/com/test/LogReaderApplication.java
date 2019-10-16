@@ -1,5 +1,7 @@
+package com.test;
+
+import com.test.services.LogReaderService;
 import org.apache.log4j.Logger;
-import services.LogReaderService;
 
 import java.io.File;
 import java.util.Arrays;
@@ -19,6 +21,11 @@ public class LogReaderApplication {
         logger.info("Completed processing logs in " + (System.currentTimeMillis() - startTime) + " milliseconds");
     }
 
+    /**
+     * Check whether the user has specified the necessary arguments correctly.
+     *
+     * @param args
+     */
     private static void validateArguments(String[] args) {
         if (args.length < 3) {
             logger.error("Not enough arguments provided. Arguments are: File Name/Path, Batch Size (Positive Integer - Number of rows in the file to process at once), " +
