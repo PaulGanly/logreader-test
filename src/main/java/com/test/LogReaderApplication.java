@@ -37,11 +37,11 @@ public class LogReaderApplication {
                 System.exit(0);
             }
             if(!isValidInteger(args[1]) || Integer.parseInt(args[1]) < 2){
-                logger.error(args[1] + "Is not a valid argument for batch size. Batch size much be positive and has a minimum of 2");
+                logger.error(args[1] + " is not a valid argument for batch size. Batch size much be positive and has a minimum of 2");
                 System.exit(0);
             }
-            if(!isValidInteger(args[2]) || Integer.parseInt(args[1]) < 1 || Integer.parseInt(args[1]) < MAX_THREADS){
-                logger.error(args[2] + "Is not a valid argument for thread number. Thread number must be positive and has a maximum of 24");
+            if(!isValidInteger(args[2]) || Integer.parseInt(args[1]) < 1 || Integer.parseInt(args[1]) > MAX_THREADS){
+                logger.error(args[2] + " is not a valid argument for thread number. Thread number must be positive and has a maximum of 24");
                 System.exit(0);
             }
         }
