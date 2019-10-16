@@ -15,7 +15,7 @@ Is an application that reads log file entries in the following format:
 Each log file entry is a START and FINISH event for a particular process.
 The application processes each of the entries, calculates if the process took a long time and stores the details to a HSQL Database.
 
-The user is allowed specify the number of lines in the log file that should be processed at once. This is so the large log files can be processed without running out of memory.
+The user is allowed specify the number of lines in the log file that should be processed at once. This allows large log files to be processed without running out of memory.
 
 The user is also allowed specify the number of seperate threads they want to create to process the log file entries.
 
